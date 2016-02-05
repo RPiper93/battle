@@ -10,5 +10,9 @@ class Player
   	@hp -= 10
   end
 
+  def dead?
+    @hp == 0
+  end
+
 end
 

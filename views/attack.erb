@@ -1,2 +1,6 @@
-<h3><%= @current.name %> successfully attacked <%= @opponent.name %>!</h3>
- <a href = "/play"  > OK  </a>
+<center><h3><%= @current.name %> successfully attacked <%= @opponent.name %>!</h3>
+<% if @opponent.dead? %>
+  <h1><%=@opponent.name.upcase %> LOSES!</h1>
+<% else %>
+  <a href = "/play">OK </a>
+<% end %></center>
