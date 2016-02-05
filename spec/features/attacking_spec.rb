@@ -18,4 +18,10 @@ feature 'attacking' do
     click_button('Attack!')
     expect(page).to have_content('REBECCA LOSES!')
   end
+
+  scenario 'there are more than one ways to attack' do
+    sign_in_and_play
+    expect(page).to have_content('Sleep')
+    expect(page).to have_content('Attack!')
+  end
 end

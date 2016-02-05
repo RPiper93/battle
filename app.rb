@@ -24,6 +24,10 @@ class Battle < Sinatra::Base
     erb(:play)
   end
 
+  post '/attack' do
+    redirect('/attack')
+  end
+
   get '/attack' do
     @current = $game.current
     @opponent = $game.opponent
