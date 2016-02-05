@@ -18,5 +18,10 @@ describe Game do
       game.switch_turn
       expect(game.current).to eq player_2
     end
+
+    it 'changes opponent player' do
+      game.switch_turn
+      expect(game.opponent).to eq player_1
+    end
   end
 end

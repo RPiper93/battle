@@ -1,6 +1,7 @@
-<h1><%= @player_1.name %> vs <%= @player_2.name %></h1>
+<center><h1><%= @player_1.name %> vs <%= @player_2.name %></h1>
 <h2><%= @current.name %>'s Turn</h2>
-<h3><%= @player_2.name %>'s HP: <%= @player_2.hp %>/100 </h3>
+<h3><%= @player_1.name %>'s HP: <%= @player_1.hp %>/100 |
+  | <%= @player_2.name %>'s HP: <%= @player_2.hp %>/100 </h3>
 <form action="/attack">
   <button name="attack">Attack!</button>
-</form>
+</form></center>
